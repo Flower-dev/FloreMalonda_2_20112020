@@ -31,7 +31,6 @@ html, body {
 /*partie recherche du site web*/
 
 .container1{
-    display: flex;
     max-width: 100%;
 }
 
@@ -104,6 +103,7 @@ html, body {
 }
 
 .card-1{
+    display: flex;
     background-color: white; 
     max-width: 95%;
     max-height: 30%;
@@ -113,8 +113,8 @@ html, body {
 
 .card-img-left{
     object-fit: cover;
-    max-width: 95%;
-    max-height: 30%;
+    max-width: 80%;
+    max-height: 25%;
 }
 
 .container3{
