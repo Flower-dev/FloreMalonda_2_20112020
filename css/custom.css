@@ -23,6 +23,39 @@ html, body {
     justify-content:space-evenly;
 }
 
+.container2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lodging{
+    background-color: #F2F2F2;
+}
+
+.blocimg1{
+    display : flex;
+    justify-content: space-around;
+}
+
+.blocimg2{
+    display : flex;
+    justify-content: space-around;
+}
+
+.blocimg{
+    background-color: white;
+}
+
+.popular{
+    background-color: #F2F2F2;
+}
+
+.blocimgpop{
+    background-color: white;  
+}
+
+
+
 .legalnotice{
     display: flex;
     justify-content:space-around;
