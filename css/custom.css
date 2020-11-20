@@ -1,8 +1,18 @@
+/*ce qui s'applique à l'ensemble du site*/
+html{
+    font-family: "Raleway";
+}
+
+html p{
+font-size : 12px;
+}
+
 html, body {
     margin: 0, 0, 0, 0;
     padding: 0, 0, 0, 0;
 }
 
+/*partie header*/
 .navbar ol{
     list-style-type: none;
     padding-left: 0;
@@ -18,11 +28,13 @@ html, body {
     justify-content: space-between;
 }
 
+/*partie recherche du site web*/
 .filters{
     display: flex;
     justify-content:space-evenly;
 }
 
+/*Partie avec l'ensemble des hébergements proposés*/
 .container2{
     display: flex;
     justify-content: space-between;
@@ -30,30 +42,67 @@ html, body {
 
 .lodging{
     background-color: #F2F2F2;
+    max-width: 70%;
+    max-height: 80%;
+    border-radius: 15px;
 }
 
-.blocimg1{
+.bloc-card-top{
     display : flex;
     justify-content: space-around;
+    margin-bottom: 10px;
 }
 
-.blocimg2{
+.bloc-card-bottom{
     display : flex;
     justify-content: space-around;
+    margin-bottom: 10px;
 }
 
-.blocimg{
+.card{
     background-color: white;
+    max-width: 25%;
+    max-height: 20%;
+    border-radius: 15px;
 }
 
-.popular{
+.card-text span{
+    font-weight: bold; 
+}
+
+.card-img-top{
+    object-fit: cover;
+    max-width: 95%;
+    max-height: 30%;
+}
+
+.bloc-card-right{
     background-color: #F2F2F2;
+    max-width: 25%;
+    max-height: 80%;
 }
 
-.blocimgpop{
-    background-color: white;  
+.card-1{
+    background-color: white; 
+    max-width: 95%;
+    max-height: 30%; 
 }
 
+.card-img-left{
+    object-fit: cover;
+    max-width: 95%;
+    max-height: 30%;
+}
+
+.container3{
+    display: flex;
+    justify-content:space-around;
+}
+
+.activitespart2{
+    display : flex;
+    flex-direction: column;  
+}
 
 
 .legalnotice{
@@ -62,6 +111,6 @@ html, body {
     background-color:#F2F2F2;
 }
 
-.title{
+.legalnotice-title{
     font-weight: bold;   
 }
