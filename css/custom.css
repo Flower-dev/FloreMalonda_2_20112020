@@ -1,0 +1,34 @@
+html, body {
+    margin: 0, 0, 0, 0;
+    padding: 0, 0, 0, 0;
+}
+
+.navbar ol{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.item{
+    display: inline-block;
+    text-align: right;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.legalnotice{
+    display: flex;
+    justify-content:space-around;
+    background-color:#F2F2F2;
+}
+
+.title{
+    font-weight: bold;   
+}

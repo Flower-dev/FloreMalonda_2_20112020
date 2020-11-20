@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="css/custom.css" rel="stylesheet" type="text/css"/>
+    <script src="https://kit.fontawesome.com/ddde616424.js" crossorigin="anonymous"></script>
+    <title>Reservia</title>
+  </head>
+
+  <!--Partie header : logo et navbar attention "Hébergements" & "Activités" sont des ancres
+  ne pas oublier non plus que "s'inscrire" doit rester en gras couleur bleue-->
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html"><img src="img/logo/Reservia.svg" alt"logo"></a>
+      <ol>
+        <li class="item"><a href="#">Hébergements</a></li>
+        <li class="item"><a href="#">Activités</a></li>
+        <li class="item"><a href="#">S'inscrire</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <!--Corps du site dans lequel se trouve, la partie recherche, la présentation des hébergements et 
+  les activités à faire en lien avec la destination -->
+
+  <body>
+      <div id="container">  
+  <!--Partie recherche du site ainsi que les filtres pour affiner sa recherche-->
+        <div class="search">
+              <h4>Trouvez votre hébergement pour des vacances de rêves</h4>
+              <p>En plein centre ville ou en pleine nature</p>
+  <!--barre de recherche (ne pas oublier de mettre un placeholder-->
+              <div class="searchbar">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="search" id="searchbox" name="Recherche" aria-label="Research in the web site" placeholder="Marseille, France">
+                <button>Rechercher</button>   
+              </div>
+
+    <!--partie filtres pour affiner la recherche effectuée-->            
+              <div class="filters">
+                  <div class="filter1">
+                    <p>Filtres</p>
+                  </div>
+                  <div class="filter2">
+                    <p><i class="fas fa-money-bill-wave"></i> Économique</p>
+                  </div>
+                  <div class="filter2">
+                    <p><i class="fas fa-child"></i> Familial</p>
+                  </div>
+                  <div class="filter2">
+                    <p><i class="fas fa-heart"></i> Romantique</p>
+                  </div>
+                  <div class="filter2">
+                    <p><i class="fas fa-dog"></i> Animaux autorisés</p>
+                  </div>
+              </div>
+
+    <!--Informations supplémentaires en lien avec la recherche fait au dessus-->
+              <p><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+          </div>
+
+    <!--partie hébergements & présentation des plus populaires-->
+          <div class="container2">
+            <div class="lodging">
+              <h4>Hébergements à Marseille</h4>
+              
+            </div>
+          </div>
+      </div>
+  </body>
+  
+  <footer>
+    <div class="legalnotice">
+      <div class="legalnotice1">
+        <p class = "title">À propos</p>
+        <p>Fonctionnement du site</p>
+        <p>Conditions générales de vente</p>
+        <p>Données et confidentialité</p>
+      </div>
+      <div class="legalnotice2">
+        <p class = "title">Nos hébergements</p>
+        <p>Charte qualité</p>
+        <p>Soumettre votre hôtel</p>
+      </div>
+      <div class="legalnotice3">
+        <p class = "title">Assistance</p>
+        <p>Centre d'aide</p>
+        <p>Nous contacter</p>
+      </div>
+    </div>
+  </footer>
+
+</html>
