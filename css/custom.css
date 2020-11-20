@@ -29,15 +29,26 @@ html, body {
 }
 
 /*partie recherche du site web*/
+
+.container1{
+    display: flex;
+    max-width: 100%;
+}
+
 .filters{
     display: flex;
     justify-content:space-evenly;
 }
 
+.container{
+    max-width: 100%;
+}
+
 /*Partie avec l'ensemble des hébergements proposés*/
 .container2{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
+    max-width: 100%;
 }
 
 .lodging{
@@ -47,23 +58,24 @@ html, body {
     border-radius: 15px;
 }
 
-.bloc-card-top{
+.block-card-top{
     display : flex;
     justify-content: space-around;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
-.bloc-card-bottom{
+.block-card-bottom{
     display : flex;
     justify-content: space-around;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .card{
     background-color: white;
-    max-width: 25%;
-    max-height: 20%;
+    max-width: 30%;
+    max-height: 25%;
     border-radius: 15px;
+    box-shadow: 5px 5px 5px #EAEAEA;
 }
 
 .card-text span{
@@ -72,20 +84,31 @@ html, body {
 
 .card-img-top{
     object-fit: cover;
-    max-width: 95%;
+    max-width: 96%;
     max-height: 30%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 5px;  
+    margin-left:5px; 
 }
 
-.bloc-card-right{
+.card-stars{
+    font-size : 9px;
+}
+
+.block-card-right{
     background-color: #F2F2F2;
     max-width: 25%;
     max-height: 80%;
+    border-radius: 15px;
 }
 
 .card-1{
     background-color: white; 
     max-width: 95%;
-    max-height: 30%; 
+    max-height: 30%;
+    border-radius: 15px; 
+    box-shadow: 5px 5px 5px #EAEAEA;
 }
 
 .card-img-left{
@@ -97,13 +120,70 @@ html, body {
 .container3{
     display: flex;
     justify-content:space-around;
+    max-width: 100%;
 }
 
-.activitespart2{
-    display : flex;
-    flex-direction: column;  
+.container3-left{
+    display:flex;
+    justify-content:space-around;
+    max-width: 45%;
 }
 
+.container3-right{
+    display:flex;
+    justify-content:space-between;
+    max-width: 45%;
+}
+
+.card-left{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    max-height: 80%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #EAEAEA;
+}
+
+.card-right{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    max-height: 45%;
+    margin-left:30px;
+}
+
+.card-right-1{
+    max-width: 100%;
+    max-height: 90%; 
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #EAEAEA;
+    margin-bottom: 30px;
+}
+
+.card-right-2{
+    max-width: 100%;
+    max-height: 90%; 
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #EAEAEA;
+}
+
+.card-img-top-left{
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 90%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-img-top-right{
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 90%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/*partie footer*/
 
 .legalnotice{
     display: flex;
