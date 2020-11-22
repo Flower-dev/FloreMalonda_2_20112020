@@ -50,7 +50,16 @@ h4{
 
 .navbar a:hover{
     color : #0065FC;
+    font-weight: bold;
 }
+
+.navbar a:visited {
+    color: black; 
+} 
+
+.navbar a:active {
+    color: #0065FC; 
+} 
 
 .item{
     display: inline-block;
@@ -196,6 +205,11 @@ h4{
     font-weight: lighter; 
 }
 
+.card-body{
+    line-height: 1.5px;
+    margin-right: 15px;
+}
+
 .card-text span{
     font-weight: bolder; 
 }
@@ -203,7 +217,7 @@ h4{
 .card-img-top{
     object-fit: cover;
     max-width: 96%;
-    max-height: 30%;
+    height: auto;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     margin-top: 5px;  
@@ -250,8 +264,7 @@ h4{
 }
 
 .card-body-1{
-    display: flex;
-    flex-direction: column;
+    line-height: 1px;
     text-align: center;
 }
 
