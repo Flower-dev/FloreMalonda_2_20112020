@@ -77,13 +77,14 @@ h4{
     text-decoration: none;
 }
 
-.searchbar i{
+.searchbar i{ /*Pb d'alignement avec le reste de la barre de recherche*/
     background-color: #F2F2F2;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     padding: 10px;
     margin: 0 auto;
     text-align: center;
+    margin: 3px;
 }
 
 .bouton {
@@ -94,18 +95,25 @@ h4{
     padding: 10px;
     color : white;
     margin: 0 auto;
+    margin-left : -5px;
 }
+
+.bouton:hover{
+    background-color: #DEEBFF;
+    border: 1px#DEEBFF solid; 
+}
+
 
 #searchbox {
-  margin: 0 auto; 
   padding: 10px;
   border: 1px#F2F2F2 solid;
+  margin-left : -8px;
 }
 
-#searchbox ::placeholder{
-    color:red;
+#searchbox::placeholder{ /*utiliser la pseudo-class ::placeholder pour modifier les caractéristiques du placeholder*/
+    color: dark;
     font-weight: bold;
-}
+} 
 
 .container{
     max-width: 100%;
@@ -123,14 +131,18 @@ h4{
     height: 10px;
     text-align: center;
     font-size: 10px;
-    padding: 4px;
+    padding: 5px;
+    margin: 3px; /*gère l'alignement avec le texte à côté*/
 }
 
 .infosup{
     display: flex;
     flex-direction: row;
     justify-content: left;
-    text-align: left;
+}
+
+.infosup p{
+    font-size: 10px;
 }
 
 .filters{
@@ -388,8 +400,9 @@ h4{
 
 .legalnotice{
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     background-color:#F2F2F2;
+    
 }
 
 .legalnotice a{
