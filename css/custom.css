@@ -101,7 +101,8 @@ h4{
 .bouton:hover{
     background-color: #DEEBFF;
     border: 1px#DEEBFF solid;
-    color: #0065FC;  
+    color: #0065FC; 
+    transition: 0.3s; 
 }
 
 
