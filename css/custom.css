@@ -9,8 +9,8 @@ font-size : 12px;
 }
 
 html, body {
-    margin: 0, 0, 0, 0;
-    padding: 0, 0, 0, 0;
+    margin: 0;
+    padding: 0;
 }
 
 h4{
@@ -100,7 +100,8 @@ h4{
 
 .bouton:hover{
     background-color: #DEEBFF;
-    border: 1px#DEEBFF solid; 
+    border: 1px#DEEBFF solid;
+    color: #0065FC;  
 }
 
 
@@ -182,7 +183,7 @@ h4{
 .bulle{
     color: #0065FC;
     display: inline-block;
-    border-radius: 150px;
+    border-radius: 100%;
     width: 25px;
     height: 25px;
     text-align: center;
@@ -197,6 +198,8 @@ h4{
 
 
 /*Partie avec l'ensemble des hébergements proposés*/
+/*voir pour utiliser Grid et et ne flexbox pour placer les différents éléments*/
+/*concerant la taille des box utiliser la propriété :  box-sizing: border-box;*/
 
 .container2{
     display: flex;
@@ -231,6 +234,7 @@ h4{
 }
 
 .card{
+    box-sizing: border-box;
     background-color: white;
     max-width: 30%;
     max-height: 25%;
@@ -290,6 +294,7 @@ h4{
 }
 
 .card-1{
+    box-sizing: border-box
     display: flex;
     background-color: white; 
     max-width: 95%;
@@ -316,7 +321,8 @@ h4{
     border-bottom-left-radius: 15px; 
 }
 
-/*Partie activités à Marseille*/
+/*Partie activités à Marseille*/ 
+/*voir pour utiliser Grid et et ne flexbox pour placer les différents éléments*/
 
 .container3{
     display: flex;
