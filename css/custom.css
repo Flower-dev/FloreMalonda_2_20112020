@@ -66,6 +66,8 @@ h4{
 .navbar{
     display: flex;
     justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /*partie recherche du site web*/
@@ -116,6 +118,8 @@ h4{
 
 .container{
     max-width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .container1{
@@ -125,7 +129,7 @@ h4{
 .info{
     color: #0065FC;
     border: 1px #DEEBFF solid;
-    border-radius: 150px;
+    border-radius: 100%;
     width: 10px;
     height: 10px;
     text-align: center;
