@@ -65,6 +65,10 @@ h4{
 
 /*partie recherche du site web*/
 
+.search{
+    margin-bottom: 20px;
+}
+
 .searchbar input {
     text-decoration: none;
 }
@@ -193,8 +197,6 @@ h4{
 
 
 /*Partie avec l'ensemble des hébergements proposés*/
-/*voir pour utiliser Grid et et ne flexbox pour placer les différents éléments*/
-/*concerant la taille des box utiliser la propriété :  box-sizing: border-box;*/
 
 .container2{
     display: flex;
@@ -219,6 +221,13 @@ h4{
 
 .block-card-left h4{
     margin-left: 20px;
+    margin-bottom: -5px;
+}
+
+.block-card-left a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
 .block-card-top{
@@ -245,27 +254,33 @@ h4{
 
 .card-text{
     font-weight: lighter; 
-    margin-top: -8px;
+    margin-top: -10px;
 }
 
 .card-body{
     margin-left:20px;
     margin-bottom: 15px;
+    margin-top: -5px;
 }
 
 .card-text span{
     font-weight: bolder; 
 }
 
+.afficherplus{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
 .card-img-top{
+    background-size: cover;
     object-fit: cover;
-    height: auto;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     margin-top: 5px;  
     margin-left:5px; 
     width: 96%;
-    height: 70%;
+    height: 150px;
     margin-bottom: -8px;
 }
 
@@ -278,10 +293,10 @@ h4{
     color:#0065FC;
 }
 
-.block-card-left a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+/*Partie des hébergments se trouvant à droite de l'écran*/
+
+.block-card-right h4{
+    margin-left: 25px;
 }
 
 .block-card-right{
@@ -300,33 +315,45 @@ h4{
 }
 
 .card-1{
-    box-sizing: border-box;
     display: flex;
+    flex-direction: row;
     background-color: white; 
     border-radius: 15px; 
     box-shadow: 5px 5px 5px #EAEAEA;
     margin-bottom: 30px;
-    margin-left: 10px;
-}
-
-.card-body-1{
-    line-height: 1px;
-    text-align: center;
+    margin-left: 25px;
+    width: 90%;
+    height: 15%;
 }
 
 .card-img-left{
+    background-size: cover;
     object-fit: cover;
-    max-width: auto;
-    max-height: 120px;
+    height: 95%;
+    width: 200px;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 9px;
     margin-left: 5px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px; 
 }
 
+.card-text-1{
+    font-weight: lighter; 
+    margin-top: -10px;
+}
+
+.card-body-1{
+    margin-left:20px;
+    margin-bottom: 15px;
+    margin-top: -5px;
+}
+
+.card-text-1 span{
+    font-weight: bolder; 
+}
+
 /*Partie activités à Marseille*/ 
-/*voir pour utiliser Grid et et ne flexbox pour placer les différents éléments*/
 
 .container3{
     display: flex;
@@ -412,6 +439,7 @@ h4{
     display: flex;
     justify-content: space-around;
     background-color:#F2F2F2;
+    width: 100%;
     
 }
 
