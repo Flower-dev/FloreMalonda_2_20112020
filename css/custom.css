@@ -73,7 +73,7 @@ h4{
     text-decoration: none;
 }
 
-.searchbar i{ /*Pb d'alignement avec le reste de la barre de recherche*/
+.searchbar i{ 
     background-color: #F2F2F2;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -178,9 +178,10 @@ h4{
     font-size: 12px;
 }
 
-.filter2:active{
-    background-color: lightcoral;
+.filter2:hover{
+    background-color: #DEEBFF;
 }
+
 
 
 .bulle{
@@ -328,6 +329,7 @@ h4{
     margin-left: 25px;
     width: 90%;
     height: 15%;
+    max-height: 200px;
 }
 
 .card-img-left{
@@ -346,7 +348,7 @@ h4{
 .card-text-1{
     font-weight: lighter; 
     margin-top: -10px;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 .card-body-1{
@@ -376,8 +378,8 @@ h4{
     display:flex;
     flex-direction: row;
     max-width: 45%;
-    margin-left: 20px;
-    margin-right: 30px;
+    margin-left: 55px;
+    margin-right: 50px;
 }
 
 .container3-right{
@@ -406,7 +408,7 @@ h4{
     height: 450px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px #EAEAEA;
-    margin-right: 30px;
+    margin-right: 45px;
  
 }
 
@@ -418,7 +420,7 @@ h4{
 
 .card-right-1{
     width: 90%;
-    height: 150px;
+    height: 210px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px #EAEAEA;
     margin-bottom: 30px;
@@ -426,7 +428,7 @@ h4{
 
 .card-right-2{ 
     width: 90%;
-    height: 150px;
+    height: 210px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px #EAEAEA;
 }
@@ -441,10 +443,18 @@ h4{
     border-top-right-radius: 15px;
 }
 
+.card-img-top-left-1{
+    object-fit: cover;
+    width: 100%;
+    height: 160px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
 .card-img-top-right{
     object-fit: cover;
     width: 100%;
-    height: 100px;
+    height: 160px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
