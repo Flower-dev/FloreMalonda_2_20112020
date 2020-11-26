@@ -32,3 +32,7 @@ Avant de valider définitivement ce design, l’entreprise décide de réaliser 
 - Les couleurs de la charte graphique : bleu #0065FC et sa version plus claire #DEEBFF, gris #F2F2F2
 
 - Utilisation de la font Raleway
+
+- Travailler en from scratch dans le but de monter en compétences en HTML/CSS natif
+
+- Le site web doit être compatible avec les navigateurs Chrome et Firefox.
