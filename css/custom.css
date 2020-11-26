@@ -108,7 +108,7 @@ h4{
 }
 
 #searchbox::placeholder{ /*utiliser la pseudo-class ::placeholder pour modifier les caractéristiques du placeholder*/
-    color: dark;
+    color: black;
     font-weight: bold;
 } 
 
