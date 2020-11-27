@@ -226,7 +226,7 @@ h4{
     height: 50%;
     border-radius: 15px;
     margin-bottom: 20px;
-    max-width: 85%;
+    margin-right: 30px;
 }
 
 .block-card-left h4{
@@ -260,7 +260,6 @@ h4{
     margin: 20px;
     width: 35%;
     height: 45%;
-    max-width: 100%;
 }
 
 .card-text{
@@ -312,10 +311,10 @@ h4{
 
 .block-card-right{
     background-color: #F2F2F2;
-    width: 100%;
+    width: 30%;
     height: 50%;
     border-radius: 15px;
-    max-width: 85%;
+    margin-right: 30px;
 }
 
 .block-card-right a{
@@ -333,17 +332,16 @@ h4{
     margin-bottom: 30px;
     margin-left: 15px;
     width: 90%;
-    height: 15%;
-    max-height: 167px;
+    height: 50%;
 }
 
 .card-img-left{
     background-size: cover;
     object-fit: cover;
-    height: 95%;
+    height: 92%;
     width: 150px;
     margin-top: 5px;
-    margin-bottom: 9px;
+    margin-bottom: 4px;
     margin-right: 5px;
     margin-left: 5px;
     border-top-left-radius: 15px;
@@ -495,33 +493,20 @@ h4{
     margin-top: 20px;
 }
 
-@media screen and (min-width: 790px){
+@media screen and (min-width: 768px){
     .container2 {
         flex-wrap: nowrap;
-        width: 100%;
-        margin-left: 60px;
     }
 
     .block-card-left {
-        background-color: #F2F2F2;
-        width: 90%;
-        border-radius: 15px;
-        margin-bottom: 20px;
-    }
+        margin-left: 20px;
 
-    .card {
-        box-sizing: border-box;
-        background-color: white;
-        border-radius: 15px;
-        box-shadow: 5px 5px 5px #EAEAEA;
-        margin: 20px;
-        width: 65%;
-        height: 45%;
-        margin-left: 30px;
     }
 
     .block-card-right {
+        width: 30%;
         margin-left: 30px;
+        margin-right: 20px;
     }
 }
 
