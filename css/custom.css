@@ -471,7 +471,7 @@ h4{
     display: flex;
     justify-content: space-around;
     background-color:#F2F2F2;
-    width: 100%;
+    max-width: 100%;
 
 }
 
