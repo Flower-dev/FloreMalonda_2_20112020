@@ -1,11 +1,15 @@
 /*ce qui s'applique à l'ensemble du site - style général*/
 
-html{
+* {
+    box-sizing: border-box;
+}
+
+html {
     font-family: "Raleway";
 }
 
-html p{
-font-size : 12px;
+html p {
+    font-size: 12px;
 }
 
 html, body {
@@ -13,13 +17,13 @@ html, body {
     padding: 0;
 }
 
-h4{
+h4 {
     font-weight: bolder;
 }
 
 /*partie header*/
 
-.navbar{
+.navbar {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -28,45 +32,45 @@ h4{
     margin-right: 20px;
 }
 
-.navbar ol{
+.navbar ol {
     list-style-type: none;
     padding-left: 0;
 }
 
-.navbar li{
-    font-family : "Raleway";
+.navbar li {
+    font-family: "Raleway";
     font-size: 12px;
     text-decoration: none;
 
 }
 
-.navbar li span{
-    font-family : "Raleway";
+.navbar li span {
+    font-family: "Raleway";
     font-size: 12px;
     font-weight: bold;
-    color : #0065FC;
+    color: #0065FC;
 }
 
-.navbar a{
+.navbar a {
     text-decoration: none;
-    color : black;
+    color: black;
 }
 
-.navbar a:hover{
-    color : #0065FC;
+.navbar a:hover {
+    color: #0065FC;
     padding-top: 15px;
     border-top: 1px #0065FC solid;
     text-align: center;
 }
 
-.item{
+.item {
     display: inline-block;
     margin-left: 35px;
 }
 
 /*partie recherche du site web*/
 
-.search{
+.search {
     margin-bottom: 20px;
 }
 
@@ -74,7 +78,7 @@ h4{
     text-decoration: none;
 }
 
-.searchbar i{
+.searchbar i {
     background-color: #F2F2F2;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -85,45 +89,45 @@ h4{
 
 .bouton {
     background-color: #0065FC;
-    border: 1px#0065FC solid;
+    border: 1px #0065FC solid;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 10px;
-    color : white;
+    color: white;
     margin: 0 auto;
-    margin-left : -5px;
+    margin-left: -5px;
 }
 
-.bouton:hover{
+.bouton:hover {
     background-color: #DEEBFF;
-    border: 1px#DEEBFF solid;
+    border: 1px #DEEBFF solid;
     color: #0065FC;
     transition: 0.3s;
 }
 
 
 #searchbox {
-  padding: 10px;
-  border: 1px#F2F2F2 solid;
-  margin-left : -8px;
+    padding: 10px;
+    border: 1px #F2F2F2 solid;
+    margin-left: -8px;
 }
 
-#searchbox::placeholder{ /*utiliser la pseudo-class ::placeholder pour modifier les caractéristiques du placeholder*/
+#searchbox::placeholder { /*utiliser la pseudo-class ::placeholder pour modifier les caractéristiques du placeholder*/
     color: black;
     font-weight: bold;
 }
 
-.container{
+.container {
     max-width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+    /*margin-left: 20px;
+    margin-right: 20px;*/
 }
 
-.container1{
+.container1 {
     max-width: 100%;
 }
 
-.info{
+.info {
     color: #0065FC;
     border: 1px #DEEBFF solid;
     border-radius: 100%;
@@ -135,17 +139,17 @@ h4{
     margin: 3px; /*gère l'alignement avec le texte à côté*/
 }
 
-.infosup{
+.infosup {
     display: flex;
     flex-direction: row;
     justify-content: left;
 }
 
-.infosup p{
+.infosup p {
     font-size: 10px;
 }
 
-.filters{
+.filters {
     margin-top: 20px;
     margin-bottom: 15px;
     display: flex;
@@ -153,18 +157,18 @@ h4{
     flex-wrap: wrap;
 }
 
-.filter1 p{
+.filter1 p {
     font-weight: bold;
 }
 
-.block-filter{
+.block-filter {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 15px;
 }
 
-.filter2 a{
+.filter2 a {
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -172,7 +176,7 @@ h4{
     padding-left: 5px;
 }
 
-.filter2{
+.filter2 {
     border: 1px #F2F2F2 solid;
     border-radius: 30px;
     text-align: justify;
@@ -181,11 +185,11 @@ h4{
     font-size: 12px;
 }
 
-.filter2:hover{
+.filter2:hover {
     background-color: #DEEBFF;
 }
 
-.bulle{
+.bulle {
     color: #0065FC;
     display: inline-block;
     border-radius: 100%;
@@ -197,14 +201,14 @@ h4{
     background-color: #DEEBFF;
 }
 
-.bulle i{
+.bulle i {
     padding-top: 7px;
 }
 
 
 /*Partie avec l'ensemble des hébergements proposés*/
 
-.container2{
+.container2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -212,116 +216,126 @@ h4{
     height: auto;
 }
 
-.card-title a{
+.card-title a {
     text-decoration: none;
     color: black;
     font-weight: bolder;
 }
 
-.block-card-left{
+.block-card-left {
     background-color: #F2F2F2;
-    width: 65%;
+    width: 100%;
     height: 50%;
     border-radius: 15px;
     margin-bottom: 20px;
-    margin-right: 30px;
 }
 
-.block-card-left h4{
+@media screen and (min-width: 768px) {
+    .block-card-left {
+        width: 65%;
+    }
+}
+
+.block-card-left h4 {
     margin-left: 20px;
     margin-bottom: -5px;
 }
 
-.block-card-left a{
+.block-card-left a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
 
-.block-card-top{
-    display : flex;
+.block-card-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.block-card-bottom {
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     margin: 0;
 }
 
-.block-card-bottom{
-    display : flex;
-    flex-direction: row;
-    margin: 0;
-}
-
-.card{
+.card {
     box-sizing: border-box;
     background-color: white;
     border-radius: 15px;
     box-shadow: 5px 5px 5px #EAEAEA;
-    margin: 20px;
-    width: 35%;
+    /*margin: 20px;
+    width: 35%;*/
+    width: 100%;
+    margin-bottom: 20px;
     height: 45%;
 }
 
-.card-text{
+.card-text {
     font-weight: lighter;
     margin-top: -10px;
 }
 
-.card-body{
-    margin-left:20px;
+.card-body {
+    margin-left: 20px;
     margin-bottom: 15px;
     margin-top: -5px;
 }
 
-.card-text span{
+.card-text span {
     font-weight: bolder;
 }
 
-.afficherplus{
+.afficherplus {
     margin-left: 20px;
     margin-bottom: 20px;
 }
 
-.card-img-top{
+.card-img-top {
     background-size: cover;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     margin-top: 5px;
-    margin-left:5px;
+    margin-left: 5px;
     width: 96%;
     height: 150px;
     margin-bottom: -8px;
 }
 
-.card-stars{
-    font-size : 9px;
-    color : #F2F2F2;
+.card-stars {
+    font-size: 9px;
+    color: #F2F2F2;
 }
 
-.card-stars span{
-    color:#0065FC;
+.card-stars span {
+    color: #0065FC;
 }
 
 /*Partie des hébergments se trouvant à droite de l'écran*/
 
-.block-card-right h4{
+.block-card-right h4 {
     margin-left: 25px;
 }
 
-.block-card-right{
+.block-card-right {
     background-color: #F2F2F2;
-    width: 30%;
+    width: 100%;
     height: 50%;
     border-radius: 15px;
-    margin-right: 30px;
+    /*margin-right: 30px;*/
 }
 
-.block-card-right a{
+.block-card-right a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
 
-.card-1{
+.card-1 {
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -333,7 +347,7 @@ h4{
     height: 50%;
 }
 
-.card-img-left{
+.card-img-left {
     background-size: cover;
     object-fit: cover;
     height: 92%;
@@ -346,98 +360,104 @@ h4{
     border-bottom-left-radius: 15px;
 }
 
-.card-text-1{
+.card-text-1 {
     font-weight: lighter;
     margin-top: -10px;
     margin-bottom: 35px;
 }
 
-.card-body-1{
-    margin-left:20px;
+.card-body-1 {
+    margin-left: 20px;
     margin-bottom: 15px;
     margin-top: -5px;
 }
 
-.card-text-1 span{
+.card-text-1 span {
     font-weight: bolder;
 }
 
 /*Partie activités à Marseille*/
 
-.container3{
+.container3 {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     margin-bottom: 30px;
-    margin-left: 25px;
 }
 
-#container3{
-    margin-left: 20px;
+#container3 {
     width: 100%;
 }
 
-.container3-left{
-    display:flex;
+.container3-left {
+    display: flex;
     flex-direction: row;
-    margin-right: 20px;
-    width: 50%;
+    /*margin-right: 20px;*/
+    /*width: 50%;*/
+    width: 100%;
+    margin-bottom: 20px;
 
 }
 
-.container3-right{
-    display:flex;
+.container3-right {
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    margin-right: 20px;
-    width: 50%;
+    /*margin-right: 20px;
+    width: 50%;*/
+    width: 100%;
 }
 
-.container3-left a{
+.container3-left a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
 
-.container3-right a{
+.container3-right a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
 
-.card-left{
+.card-left {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
+    /*width: 90%;*/
     height: 450px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px #EAEAEA;
-    margin-right: 45px;
 
 }
 
-.card-right{
+.card-right {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
+    width: 100%;
 }
 
-.card-right-1{
-    width: 90%;
+.card-right-1 {
+    width: 100%;
+    /*width: 90%;*/
     height: 210px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px #EAEAEA;
     margin-bottom: 30px;
 }
 
-.card-right-2{
-    width: 90%;
+.card-right-2 {
+    /*width: 90%;*/
+    width: 100%;
     height: 210px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px #EAEAEA;
 }
 
 
-.card-img-top-left{
+.card-img-top-left {
     background-size: cover;
     object-fit: cover;
     width: 100%;
@@ -446,7 +466,7 @@ h4{
     border-top-right-radius: 15px;
 }
 
-.card-img-top-left-1{
+.card-img-top-left-1 {
     background-size: cover;
     object-fit: cover;
     width: 100%;
@@ -455,7 +475,7 @@ h4{
     border-top-right-radius: 15px;
 }
 
-.card-img-top-right{
+.card-img-top-right {
     background-size: cover;
     object-fit: cover;
     width: 100%;
@@ -467,58 +487,91 @@ h4{
 
 /*partie footer*/
 
-.legalnotice{
+footer {
+    background-color: #F2F2F2;
+}
+
+.legalnotice {
     display: flex;
-    justify-content: space-around;
-    background-color:#F2F2F2;
+    justify-content: space-between;
     max-width: 100%;
 
 }
 
-.legalnotice a{
+.legalnotice a {
     text-decoration: none;
-    color : black;
+    color: black;
 }
 
-.legalnotice-title{
+.legalnotice-title {
     font-weight: bold;
 }
 
-.legalnotice1{
+.legalnotice1 {
     margin-top: 20px;
 }
 
-.legalnotice2{
+.legalnotice2 {
     margin-top: 20px;
 }
 
-.legalnotice3{
+.legalnotice3 {
     margin-top: 20px;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
     .container2 {
         flex-wrap: nowrap;
     }
 
-    .block-card-left {
-        margin-left: 20px;
-
+    .block-card-right {
+        width: 35%;
+        margin-left: 30px;
     }
 
-    .block-card-right {
-        width: 30%;
-        margin-left: 30px;
+    .container3 {
+        flex-wrap: nowrap;
+    }
+
+    .container3-right {
+        flex-wrap: nowrap;
+    }
+
+    .block-card-top {
+        flex-wrap: nowrap;
+    }
+
+    .card {
+        margin: 20px;
+    }
+
+    .block-card-bottom {
+        flex-wrap: nowrap;
+    }
+
+    .container3-left {
         margin-right: 20px;
+    }
+
+    .card-right-bis {
+        margin-left: 20px;
+    }
+
+    .card-left {
+        margin-right: 20px;
+    }
+
+    .container3-right {
+        margin-left: 20px;
     }
 }
 
-@media screen and (min-width: 200px) and (max-width: 640px){
+/*@media screen and (min-width: 200px) and (max-width: 640px){
 
     .filter2 {
         margin-top: 5px;
     }
-    
+
     .block-card-left {
         background-color: #F2F2F2;
         width: 90%;
@@ -577,7 +630,7 @@ h4{
         flex-wrap: wrap;
         width: 100%;
     }
-    
+
     .container3-right {
         display:flex;
         flex-wrap: wrap;
@@ -638,7 +691,7 @@ h4{
         width: 300px;
         height: 75%;
         border-top-left-radius: 15px;
-        border-top-right-radius: 15px 
+        border-top-right-radius: 15px
     }
 
     .legalnotice {
@@ -646,4 +699,10 @@ h4{
         flex-direction: column;
         text-align: center;
     }
+}*/
+
+.container-width {
+    max-width: 1120px;
+    margin: auto;
+    padding: 0 10px;
 }
