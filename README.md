@@ -36,3 +36,5 @@ Avant de valider définitivement ce design, l’entreprise décide de réaliser 
 - Travailler en from scratch dans le but de monter en compétences en HTML/CSS natif
 
 - Le site web doit être compatible avec les navigateurs Chrome et Firefox.
+
+![screen n°1](maquettes/Desktop1.png)
