@@ -373,12 +373,18 @@ h4 {
     font-weight: lighter;
     margin-top: -10px;
     margin-bottom: 35px;
+    margin-left: 10px;
+}
+
+.card-title-1 {
+    margin-left: 10px;
 }
 
 .card-body-1 {
-    margin-left: 20px;
+    background-color: white;
     margin-bottom: 15px;
-    margin-top: -5px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .card-text-1 span {
@@ -625,14 +631,19 @@ footer {
 
     .card {
         margin: 20px;
-        width: 90%;
-        height: 45%;
+        width: 95%;
+        height: 25%;
         margin-top: -5px;
+        box-shadow: 1px 3px 3px 3px #EAEAEA;
     }
 
     .card-img-top {
         padding-left: 5px;
         padding-top: 5px;
+        height: 100px;
+        width: 98%;
+        margin-right: -0.5px;
+        margin-left: -0.25px;
     }
 
     .pop i{
@@ -647,90 +658,7 @@ footer {
     .card-1 {
         margin-top: -15px;
     }
-/*
 
-    .container3 {
-        flex-wrap: wrap;
-        width: 100%;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    #container3 {
-        margin-left: 20px;
-        margin-top: 30px;
-        margin-bottom: -8px;
-    }
-
-    .container3-left {
-        display:flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .container3-right {
-        display:flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .card-left {
-        box-sizing: border-box;
-        background-color: white;
-        border-radius: 15px;
-        box-shadow: 5px 5px 5px #EAEAEA;
-        margin: 20px;
-        width: 300px;
-        height: 45%;
-    }
-
-    .card-right-1 {
-        box-sizing: border-box;
-        background-color: white;
-        border-radius: 15px;
-        box-shadow: 5px 5px 5px #EAEAEA;
-        margin: 20px;
-        width: 300px;
-        height: 45%;
-    }
-
-    .card-right-2 {
-        box-sizing: border-box;
-        background-color: white;
-        border-radius: 15px;
-        box-shadow: 5px 5px 5px #EAEAEA;
-        margin: 20px;
-        width: 300px;
-        height: 45%;
-    }
-
-    .card-img-top-left {
-        background-size: cover;
-        object-fit: cover;
-        width: 300px;
-        height: 75%;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-    }
-
-    .card-img-top-left-1{
-        background-size: cover;
-        object-fit: cover;
-        width: 300px;
-        height: 75%;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px
-    }
-
-    .card-img-top-right{
-        background-size: cover;
-        object-fit: cover;
-        width: 300px;
-        height: 75%;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px
-    }
-*/
     .legalnotice {
         display: flex;
         flex-direction: column;
