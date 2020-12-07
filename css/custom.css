@@ -595,6 +595,10 @@ footer {
         text-align: center;
     }
 
+    .searchbar {
+        margin-left: 30px;
+    }
+
     .description {
         text-align: center;
         margin-top: -1px;
@@ -625,18 +629,24 @@ footer {
     }
 
     .filter1 {
-        margin-left: 20px;
+        margin-left: 30px;
     }
 
     .block-filter-group {
         display: flex;
         flex-direction: row;
+        justify-content: start;
     }
 
     .filter2 {
-        margin-top: 5px;
-        margin-left: -5px;
+        margin-top: 10px;
+        margin-left: 20px;
         flex-wrap: nowrap;
+    }
+
+    .infosup {
+        margin-left: 30px;
+        margin-bottom: 15px;
     }
 
     .container2 {
