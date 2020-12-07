@@ -21,12 +21,17 @@ h4 {
     font-weight: bolder;
 }
 
+.container-width {
+    max-width: 1350px;
+    margin: auto;
+    padding: 0 10px;
+}
+
 /*partie header*/
 
 .navbar {
     margin-top: 10px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin-left: 20px;
     margin-right: 20px;
@@ -228,11 +233,6 @@ h4 {
     margin-bottom: 20px;
 }
 
-@media screen and (min-width: 768px) {
-    .block-card-left {
-        width: 65%;
-    }
-}
 
 .block-card-left h4 {
     margin-left: 20px;
@@ -514,7 +514,6 @@ footer {
 
 .legalnotice {
     display: flex;
-    justify-content: space-between;
     max-width: 100%;
 
 }
@@ -540,14 +539,90 @@ footer {
     margin-top: 20px;
 }
 
-@media screen and (min-width: 768px) {
-    .container2 {
+.navigation {
+    display: flex;
+    flex-direction: row-reverse; 
+    flex-wrap: nowrap;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .contenunavigation {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation {
+        display: flex;
         flex-wrap: nowrap;
     }
 
+    .menu {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    .container h4 {
+        text-align: center;
+    }
+
+    .filters {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-left: 20px;
+    }
+
+    .description {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .block-filter-group {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .searchbar {
+        margin-left: 200px; 
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .container2 {
+        flex-wrap: wrap-reverse;
+    }
+
     .block-card-right {
-        width: 50%;
+        width: 95%;
+        margin-left: 20px;
+        margin-bottom: 25px;
+    }
+
+    .pop h4 {
         margin-left: 30px;
+    }
+
+    .pop i {
+        margin-left: 440px; 
+    }
+
+    .card-img-left {
+        height: 200px;
+        width: 350px;
+    }
+
+    .card-1 {
+        margin-left: 25px;
+    }
+
+    .card-body-1 {
+        margin-left: 40px;
+        margin-top: 25px;
+    }
+
+    .block-card-left {
+        width: 95%;
+        margin-left: 20px;
+        margin-bottom: 25px;
     }
 
     .container3 {
@@ -586,8 +661,23 @@ footer {
         margin-left: 20px;
     }
 
-    
+    .legalnotice {
+        text-align: start;
+        margin-left: 20px;
+    }
+
+    .legalnotice1 {
+        margin-right: 40px;
+    }
+
+    .legalnotice2 {
+        margin-right: 40px;
+    }
+  
 }
+
+/*partie mobile OK reste à régler le problème de la barre de recherche (searchbar) 
+et celui de l'affichage de la barre de navigation (navbar)*/
 
 @media screen and (min-width: 200px) and (max-width: 640px){
     
@@ -629,7 +719,7 @@ footer {
     }
 
     .filter1 {
-        margin-left: 30px;
+        margin-left: 20px;
     }
 
     .block-filter-group {
@@ -640,7 +730,6 @@ footer {
 
     .filter2 {
         margin-top: 10px;
-        margin-left: 20px;
         flex-wrap: nowrap;
     }
 
@@ -746,8 +835,4 @@ footer {
 }
 
 
-.container-width {
-    max-width: 1120px;
-    margin: auto;
-    padding: 0 10px;
-}
+
