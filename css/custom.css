@@ -590,6 +590,17 @@ footer {
 }
 
 @media screen and (min-width: 200px) and (max-width: 640px){
+    
+    .container h4 {
+        text-align: center;
+    }
+
+    .description {
+        text-align: center;
+        margin-top: -1px;
+        margin-bottom: 20px;
+    }
+
     .navigation {
         flex-wrap: wrap;
     }
@@ -611,6 +622,15 @@ footer {
     .filters {
         display: flex;
         flex-direction: column;
+    }
+
+    .filter1 {
+        margin-left: 20px;
+    }
+
+    .block-filter-group {
+        display: flex;
+        flex-direction: row;
     }
 
     .filter2 {
@@ -657,6 +677,53 @@ footer {
 
     .card-1 {
         margin-top: -15px;
+    }
+
+    #container3 {
+        margin-bottom: 35px;
+        margin-left: 20px;
+    }
+
+    .card-left {
+        margin: 20px;
+        width: 85%;
+        height: 200px;
+        box-shadow: 1px 3px 3px 3px #EAEAEA;
+        margin-top: -10px;
+    }
+
+    .card-right-1 {
+        margin: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 85%;
+        height: 200px;
+        box-shadow: 1px 3px 3px 3px #EAEAEA; 
+    }
+
+    .card-right-2 {
+        margin: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 85%;
+        height: 200px;
+        box-shadow: 1px 3px 3px 3px #EAEAEA;  
+    } 
+
+    .card-img-top-left {
+        width: 100%;
+        height: 150px;
+    }
+
+    .card-img-top-left-1 {
+        width: 100%;
+        height: 150px;
+    }
+
+
+    .card-img-top-right {
+        height: 100px;
+        height: 150px;
     }
 
     .legalnotice {
