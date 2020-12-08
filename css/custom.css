@@ -251,7 +251,6 @@ h4 {
     margin-bottom: 20px;
 }
 
-
 .block-card-left h4 {
     margin-left: 20px;
     margin-bottom: -5px;
@@ -407,7 +406,6 @@ h4 {
 
 /*Partie activités à Marseille*/
 
-
 .container3 {
     width: 100%;
     margin-bottom: 30px;
@@ -537,21 +535,32 @@ footer {
         display: none;
     }
 
+    .logoentreprise {
+        margin-left: 20px;
+    }
+
+    .logoetinscription {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .inscription {
+        display: flex;
+        justify-content: right;
+    }
+
     .contenunavigation {
         display: flex;
-        flex-direction: row;
+        flex-wrap: nowrap;
     }
 
     .navigation {
         display: flex;
         flex-wrap: nowrap;
+        flex-direction: row;
     }
 
-    .menu {
-        display: flex;
-        flex-wrap: nowrap;
-    }
-    
     .filters {
         display: flex;
         flex-wrap: nowrap;
@@ -610,31 +619,31 @@ footer {
     }
 
     .card-left {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        padding: auto;
+        width: 310px;
     }
 
     .card-right {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        width: 310px;
+        height: 50%;
+        margin-left: 30px; 
     }
+
 
     .container3-right {
         width: 50%;
         display: flex;
         flex-wrap: nowrap;
+        margin-left: 20px;
+    }
+
+    .card-right-1 {
+        margin-bottom: 50px;
     }
 
     .card-right-bis {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        width: 310px;
+        height: 50%;
+        margin-left: 30px; 
     }
 
 
@@ -662,21 +671,30 @@ et celui de l'affichage de la barre de navigation (navbar)*/
         display: none;
     }
 
+    .navigation {
+        flex-wrap: wrap;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logoetinscription {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .inscription {
+        margin-left: 200px;
+        margin-top: 15px;
+    }
+
     .contenunavigation {
         display: flex;
         flex-direction: row;
     }
 
-    .navigation {
-        display: flex;
-        flex-wrap: nowrap;
-    }
-
-    .menu {
-        display: flex;
-        flex-wrap: nowrap;
-    }
-    
     .container h4 {
         text-align: center;
     }
@@ -698,7 +716,7 @@ et celui de l'affichage de la barre de navigation (navbar)*/
     }
 
     .searchbar {
-        margin-left: 200px; 
+        margin-left: 20px; 
         margin-top: 15px;
         margin-bottom: 20px;
     }
@@ -821,8 +839,6 @@ et celui de l'affichage de la barre de navigation (navbar)*/
   
 }
 
-/*partie mobile OK reste à régler le problème de la barre de recherche (searchbar) 
-et celui de l'affichage de la barre de navigation (navbar)*/
 
 @media screen and (min-width: 200px) and (max-width: 640px){
     .bouton {
@@ -834,7 +850,7 @@ et celui de l'affichage de la barre de navigation (navbar)*/
     }
 
     .searchbar {
-        margin-left: 30px;
+        margin-left: 20px;
     }
 
     .description {
@@ -845,20 +861,22 @@ et celui de l'affichage de la barre de navigation (navbar)*/
 
     .navigation {
         flex-wrap: wrap;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 40px;
     }
 
-    .menu {
+    .logoetinscription {
+        width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: start;
-        margin-top: 35px;
-        margin-right: 55px;
+        justify-content: space-around;
     }
 
     .inscription {
-        display: flex;
-        justify-content: end;
-        margin-left: 30px;
+        margin-left: 130px;
+        margin-top: 15px;
     }
 
     .filters {
