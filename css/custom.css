@@ -79,11 +79,17 @@ h4 {
     margin-bottom: 20px;
 }
 
+.searchbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
 .searchbar input {
     text-decoration: none;
 }
 
-.searchbar i {
+.localisation i {
     background-color: #F2F2F2;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -101,6 +107,20 @@ h4 {
     color: white;
     margin: 0 auto;
     margin-left: -5px;
+}
+
+.bouton1 {
+    text-decoration: none;
+    background-color: #0065FC;
+    border: 1px #0065FC solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: -7px;
+}
+
+.bouton1 i {
+    text-decoration: none;
+    color: white;
 }
 
 .bouton:hover {
@@ -436,16 +456,15 @@ h4 {
 */
 
 .card-right-1 {
-    width: 100%;
-    height: 210px;
+    /*width: 100%;
+    height: 210px;*/
     border-radius: 15px;
     box-shadow: 5px 5px 5px #EAEAEA;
-    margin-bottom: 30px;
 }
 
 .card-right-2 {
-    width: 100%;
-    height: 210px;
+    /*width: 100%;
+    height: 210px;*/
     border-radius: 15px;
     box-shadow: 5px 5px 5px #EAEAEA;
 }
@@ -514,6 +533,10 @@ footer {
 
 
 @media screen and (min-width: 1150px) {
+    .bouton1 {
+        display: none;
+    }
+
     .contenunavigation {
         display: flex;
         flex-direction: row;
@@ -576,14 +599,13 @@ footer {
     .container3 {
         width: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-wrap: nowrap;
     }
 
     .container3-left {
         width: 50%;
+        display: flex;
         flex-wrap: nowrap;
-        flex-direction: row;
 
     }
 
@@ -592,6 +614,7 @@ footer {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
+        padding: auto;
     }
 
     .card-right {
@@ -603,7 +626,8 @@ footer {
 
     .container3-right {
         width: 50%;
-        flex-direction: row;
+        display: flex;
+        flex-wrap: nowrap;
     }
 
     .card-right-bis {
@@ -617,6 +641,7 @@ footer {
     .legalnotice {
         text-align: start;
         margin-left: 20px;
+        width: 100%;
     }
 
     .legalnotice1 {
@@ -633,6 +658,10 @@ de la barre de recherche (searchbar)
 et celui de l'affichage de la barre de navigation (navbar)*/
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
+    .bouton {
+        display: none;
+    }
+
     .contenunavigation {
         display: flex;
         flex-direction: row;
@@ -779,6 +808,7 @@ et celui de l'affichage de la barre de navigation (navbar)*/
     .legalnotice {
         text-align: start;
         margin-left: 20px;
+        width: 100%;
     }
 
     .legalnotice1 {
@@ -795,7 +825,10 @@ et celui de l'affichage de la barre de navigation (navbar)*/
 et celui de l'affichage de la barre de navigation (navbar)*/
 
 @media screen and (min-width: 200px) and (max-width: 640px){
-    
+    .bouton {
+        display: none;
+    }
+
     .container h4 {
         text-align: center;
     }
@@ -957,6 +990,7 @@ et celui de l'affichage de la barre de navigation (navbar)*/
         flex-direction: column;
         text-align: left;
         margin-left: 20px;
+        width: 100%;
     }
     
 }

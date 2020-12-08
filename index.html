@@ -24,14 +24,14 @@
                     </div>
                     <div class="navigation">
                         <ol>
-                            <div class="inscription">
-                                <li class="item"><a href="#"><span>S'inscrire</span></a></li>
-                            </div>
                             <div class="menu">
                                 <li class="item"><a href="#block-card-left">Hébergements</a></li>
                                 <li class="item"><a href="#container3">Activités</a></li>
                             </div>
                         </ol>
+                    </div>
+                    <div class="inscription">
+                        <li class="item"><a href="#"><span>S'inscrire</span></a></li>
                     </div>
                 </div>
             </nav>
@@ -44,10 +44,13 @@
 
                 <div class="container1">
                     <form class="searchbar"> <!--barre de recherche (ne pas oublier de mettre un placeholder-->
-                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="localisation">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
                         <input type="search" id="searchbox" name="query" aria-label="Research in the web site"
                             placeholder="Marseille, France">
-                        <input class="bouton" type="submit" value="Rechercher">
+                        <button class="bouton1" type="submit"><i class="fas fa-search"></i></button>
+                        <button class="bouton" type="submit">Rechercher</button>
                     </form>
 
                     <div class="filters"> <!--partie filtres pour affiner la recherche effectuée-->
