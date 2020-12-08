@@ -246,14 +246,12 @@ h4 {
 .block-card-top {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     margin: 0;
     padding-top: 20px;
 }
 
 .block-card-bottom {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     margin: 0;
 }
@@ -304,7 +302,7 @@ h4 {
     padding-left: 1px;
     padding-top: 1px;
     width: 96%;
-    height: 150px;
+    height: 136px;
     margin-bottom: -8px;
 }
 
@@ -420,25 +418,25 @@ h4 {
 }
 
 .card-left {
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
     width: 100%;
     height: 450px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px #EAEAEA;
 
 }
-
+/*
 .card-right {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
     width: 100%;
 }
+*/
 
 .card-right-1 {
     width: 100%;
-    /*width: 90%;*/
     height: 210px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px #EAEAEA;
@@ -514,13 +512,8 @@ footer {
     margin-top: 20px;
 }
 
-.navigation {
-    display: flex;
-    flex-direction: row-reverse; 
-    flex-wrap: nowrap;
-}
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1150px) {
     .contenunavigation {
         display: flex;
         flex-direction: row;
@@ -560,7 +553,84 @@ footer {
         flex-wrap: nowrap;
         width: 100%;
     }
+
+    .block-card-left {
+        flex-wrap: nowrap;
+        width: 65%;
+        margin-right: 30px;
+    }
+
+    .card {
+        width: 30%;
+        margin-left: 20px;
+    }
+
+    .block-card-right {
+        width: 35%;
+    }
+
+    .pop i {
+        margin-left: 200px;
+    }
+
+    .container3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container3-left {
+        width: 50%;
+        flex-wrap: nowrap;
+        flex-direction: row;
+
+    }
+
+    .card-left {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .card-right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .container3-right {
+        width: 50%;
+        flex-direction: row;
+    }
+
+    .card-right-bis {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+
+    .legalnotice {
+        text-align: start;
+        margin-left: 20px;
+    }
+
+    .legalnotice1 {
+        margin-right: 80px;
+    }
+
+    .legalnotice2 {
+        margin-right: 80px;
+    }
 }
+
+/*partie tablette (ipad) OK reste à régler le problème 
+de la barre de recherche (searchbar) 
+et celui de l'affichage de la barre de navigation (navbar)*/
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
     .contenunavigation {
@@ -785,6 +855,18 @@ et celui de l'affichage de la barre de navigation (navbar)*/
 
     .container2 {
         flex-wrap: wrap-reverse;
+    }
+
+    .block-card-left {
+        flex-wrap: wrap;
+    }
+
+    .block-card-top {
+        flex-wrap: wrap;
+    }
+
+    .block-card-bottom {
+        flex-wrap: wrap; 
     }
 
     .block-card-left {
