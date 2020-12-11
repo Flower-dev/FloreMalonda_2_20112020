@@ -22,20 +22,13 @@ h4 {
 }
 
 .container-width {
-    max-width: 1350px;
+    max-width: 1150px;
     margin: auto;
     padding: 0 10px;
 }
 
 /*partie header*/
 
-.navbar {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 20px;
-    margin-right: 20px;
-}
 
 .navbar ol {
     list-style-type: none;
@@ -537,28 +530,32 @@ footer {
 
     .logoentreprise {
         margin-left: 20px;
+        position: absolute;
+        left: 9%;
     }
 
     .logoetinscription {
         display: flex;
-        flex-wrap: nowrap;
-        width: 100%;
     }
 
     .inscription {
-        display: flex;
-        justify-content: right;
+        margin-top: 15px;
+        position: absolute;
+        left: 80%;
     }
 
     .contenunavigation {
         display: flex;
-        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+        margin-bottom: 5%;
     }
 
     .navigation {
         display: flex;
-        flex-wrap: nowrap;
         flex-direction: row;
+        position: absolute;
+        width: 60%;
+        left: 65%;
     }
 
     .filters {
@@ -672,22 +669,23 @@ et celui de l'affichage de la barre de navigation (navbar)*/
     }
 
     .navigation {
-        flex-wrap: wrap;
-        width: 100%;
         display: flex;
-        justify-content: space-between;
+        flex-direction: row;
+        position: absolute;
+        width: 60%;
+        left: 45%;
     }
 
     .logoetinscription {
-        width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        width: 100%;
     }
 
     .inscription {
-        margin-left: 200px;
         margin-top: 15px;
+        position: absolute;
+        left: 80%;
     }
 
     .contenunavigation {
@@ -701,8 +699,12 @@ et celui de l'affichage de la barre de navigation (navbar)*/
 
     .filters {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         margin-left: 20px;
+    }
+
+    .filter2 {
+        margin-top: 10px;
     }
 
     .description {
@@ -726,7 +728,7 @@ et celui de l'affichage de la barre de navigation (navbar)*/
     }
 
     .block-card-right {
-        width: 95%;
+        width: 90%;
         margin-left: 20px;
         margin-bottom: 25px;
     }
@@ -741,7 +743,7 @@ et celui de l'affichage de la barre de navigation (navbar)*/
 
     .card-img-left {
         height: 200px;
-        width: 350px;
+        width: 310px;
     }
 
     .card-1 {
@@ -754,7 +756,7 @@ et celui de l'affichage de la barre de navigation (navbar)*/
     }
 
     .block-card-left {
-        width: 95%;
+        width: 90%;
         margin-left: 20px;
         margin-bottom: 25px;
     }
@@ -783,7 +785,7 @@ et celui de l'affichage de la barre de navigation (navbar)*/
 
     .card-left {
         margin: 20px;
-        width: 95%;
+        width: 90%;
         height: 300px;
         box-shadow: 1px 3px 3px 3px #EAEAEA;
         margin-top: -10px;
@@ -793,7 +795,7 @@ et celui de l'affichage de la barre de navigation (navbar)*/
         margin: 20px;
         margin-top: 20px;
         margin-bottom: 20px;
-        width: 95%;
+        width: 90%;
         height: 300px;
         box-shadow: 1px 3px 3px 3px #EAEAEA; 
     }
@@ -802,7 +804,7 @@ et celui de l'affichage de la barre de navigation (navbar)*/
         margin: 20px;
         margin-top: 20px;
         margin-bottom: 20px;
-        width: 95%;
+        width: 90%;
         height: 300px;
         box-shadow: 1px 3px 3px 3px #EAEAEA;  
     } 
@@ -826,7 +828,6 @@ et celui de l'affichage de la barre de navigation (navbar)*/
     .legalnotice {
         text-align: start;
         margin-left: 20px;
-        width: 100%;
     }
 
     .legalnotice1 {
@@ -838,7 +839,6 @@ et celui de l'affichage de la barre de navigation (navbar)*/
     }
   
 }
-
 
 @media screen and (min-width: 200px) and (max-width: 640px){
     .bouton {
@@ -963,7 +963,7 @@ et celui de l'affichage de la barre de navigation (navbar)*/
 
     .card-left {
         margin: 20px;
-        width: 85%;
+        width: 90%;
         height: 200px;
         box-shadow: 1px 3px 3px 3px #EAEAEA;
         margin-top: -10px;
@@ -973,7 +973,7 @@ et celui de l'affichage de la barre de navigation (navbar)*/
         margin: 20px;
         margin-top: 20px;
         margin-bottom: 20px;
-        width: 85%;
+        width: 90%;
         height: 200px;
         box-shadow: 1px 3px 3px 3px #EAEAEA; 
     }
@@ -982,7 +982,7 @@ et celui de l'affichage de la barre de navigation (navbar)*/
         margin: 20px;
         margin-top: 20px;
         margin-bottom: 20px;
-        width: 85%;
+        width: 90%;
         height: 200px;
         box-shadow: 1px 3px 3px 3px #EAEAEA;  
     } 
