@@ -180,6 +180,7 @@ h4 {
     display: flex;
     flex-direction: row;
     margin-left: 15px;
+    align-items: center;
 }
 
 .filter2 a {
@@ -643,6 +644,11 @@ footer {
         margin-left: 30px; 
     }
 
+    .card-title-activite {
+        padding-bottom: 15px;
+        padding-left: 20px;
+    }
+
 
     .legalnotice {
         text-align: start;
@@ -659,6 +665,14 @@ footer {
     }
 }
 
+@media screen and (min-width: 200px)and (max-width: 1060px){
+
+    .bouton {
+        display: none;
+    }
+}
+
+
 /*partie tablette (ipad) OK reste à régler le problème 
 de la barre de recherche (searchbar) 
 et celui de l'affichage de la barre de navigation (navbar)*/
@@ -669,6 +683,26 @@ et celui de l'affichage de la barre de navigation (navbar)*/
     }
 
     .navigation {
+        flex-wrap: wrap;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding-right: 50px;
+    }
+
+    .logoetinscription {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .inscription {
+        margin-left: 130px;
+        margin-top: 15px;
+    }
+
+    /*.navigation {
         display: flex;
         flex-direction: row;
         position: absolute;
@@ -691,10 +725,10 @@ et celui de l'affichage de la barre de navigation (navbar)*/
     .contenunavigation {
         display: flex;
         flex-direction: row;
-    }
+    }*/
 
     .container h4 {
-        text-align: center;
+        margin-left: 20px;
     }
 
     .filters {
@@ -708,7 +742,7 @@ et celui de l'affichage de la barre de navigation (navbar)*/
     }
 
     .description {
-        text-align: center;
+        margin-left: 20px;
         margin-bottom: 20px;
     }
 
@@ -783,6 +817,10 @@ et celui de l'affichage de la barre de navigation (navbar)*/
         margin-left: 20px;
     }
 
+    .container3-left {
+        margin-bottom: 30px;
+    }
+
     .card-left {
         margin: 20px;
         width: 90%;
@@ -819,6 +857,10 @@ et celui de l'affichage de la barre de navigation (navbar)*/
         height: 250px;
     }
 
+    .card-title-activite {
+        margin-left: 20px;
+    }
+
 
     .card-img-top-right {
         height: 100px;
@@ -832,10 +874,16 @@ et celui de l'affichage de la barre de navigation (navbar)*/
 
     .legalnotice1 {
         margin-right: 40px;
+        padding: 5px;
     }
 
     .legalnotice2 {
         margin-right: 40px;
+        padding: 5px;
+    }
+
+    .legalnotice3 {
+        padding: 5px;
     }
   
 }
@@ -845,26 +893,26 @@ et celui de l'affichage de la barre de navigation (navbar)*/
         display: none;
     }
 
-    .container h4 {
-        text-align: center;
-    }
-
     .searchbar {
         margin-left: 20px;
     }
 
+    .container h4 {
+        margin-left: 20px;
+    }
+
     .description {
-        text-align: center;
         margin-top: -1px;
         margin-bottom: 20px;
+        margin-left: 20px;
     }
 
     .navigation {
         flex-wrap: wrap;
         width: 100%;
         display: flex;
-        justify-content: space-between;
-        margin-left: 40px;
+        justify-content: space-around;
+        padding-right: 50px;
     }
 
     .logoetinscription {
@@ -961,18 +1009,23 @@ et celui de l'affichage de la barre de navigation (navbar)*/
         margin-left: 20px;
     }
 
+    .container3-left {
+        margin-bottom: 30px;
+    }
+
     .card-left {
         margin: 20px;
         width: 90%;
         height: 200px;
         box-shadow: 1px 3px 3px 3px #EAEAEA;
         margin-top: -10px;
+        margin-bottom: 30px;
     }
 
     .card-right-1 {
         margin: 20px;
         margin-top: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         width: 90%;
         height: 200px;
         box-shadow: 1px 3px 3px 3px #EAEAEA; 
@@ -981,7 +1034,7 @@ et celui de l'affichage de la barre de navigation (navbar)*/
     .card-right-2 {
         margin: 20px;
         margin-top: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         width: 90%;
         height: 200px;
         box-shadow: 1px 3px 3px 3px #EAEAEA;  
