@@ -54,13 +54,6 @@ h4 {
     color: black;
 }
 
-.navbar a:hover {
-    color: #0065FC;
-    padding-top: 15px;
-    border-top: 1px #0065FC solid;
-    text-align: center;
-}
-
 .item {
     display: inline-block;
     margin-left: 35px;
@@ -559,6 +552,13 @@ footer {
         left: 65%;
     }
 
+    .navbar a:hover {
+        color: #0065FC;
+        padding-top: 15px;
+        border-top: 1px #0065FC solid;
+        text-align: center;
+    }
+
     .filters {
         display: flex;
         flex-wrap: nowrap;
@@ -680,6 +680,13 @@ et celui de l'affichage de la barre de navigation (navbar)*/
 @media screen and (min-width: 768px) and (max-width: 1024px){
     .bouton {
         display: none;
+    }
+
+    .navbar a:hover {
+        color: #0065FC;
+        padding-top: 15px;
+        border-bottom: 1px #0065FC solid;
+        text-align: center;
     }
 
     .navigation {
@@ -895,6 +902,13 @@ et celui de l'affichage de la barre de navigation (navbar)*/
 
     .searchbar {
         margin-left: 20px;
+    }
+
+    .navbar a:hover {
+        color: #0065FC;
+        padding-top: 15px;
+        border-bottom: 1px #0065FC solid;
+        text-align: center;
     }
 
     .container h4 {
